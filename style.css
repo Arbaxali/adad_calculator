@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #161578; /* Fallback background color */
+    background-image: linear-gradient(90deg, #161578, #b81055); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(63, 70, 74, 0.8); /* Semi-transparent background */
+    width: 100%;
+    max-width: 450px; /* Control the maximum width for larger screens */
+    margin: 1rem; /* Ensure margins for mobile */
+}
+
+.headings-container {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.interaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+/* Wrapper for text box with button inside */
+.text-box-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-control {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    background-color: #3f464a;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+    height: 50px;
+    padding-right: 110px; /* Space for the button inside */
+    font-size: 1rem;
+}
+
+.text-control:focus-visible {
+    outline: none;
+    border: 2px solid #F57D4E; /* Focus outline */
+}
+
+.inside-textbox-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(90deg, #F4244C, #F57D4E);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.inside-textbox-btn:disabled {
+    
+    cursor: not-allowed;
+}
+
+.error-para {
+    color: red;
+    margin: 0.5rem 0;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-image: linear-gradient(90deg, #F4244C, #F57D4E);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-size: 1rem;
+}
+
+/* .btn:hover {
+    background-image: linear-gradient(90deg, #F57D4E, #F4244C);
+} */
+
+/* The previous CSS you provided remains intact */
+
+.result-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(63, 70, 74, 0.8);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+}
+
+.result-container h2 {
+    margin-bottom: 1rem;
+}
+
+.result-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.result-container ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Add button styling for back */
+.result-container #backButton {
+    margin-top: 1.5rem;
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-container #backButton:hover {
+    background-color: #e14c4c;
+}
+
+
+
+
+
+/* Responsive design adjustments */
+@media (max-width: 500px) {
+    .app-container {
+        padding: 1rem;
+    }
+
+    .text-control {
+        font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+    }
+
+    .btn {
+        padding: 0.7rem 1.2rem; /* Adjust padding for smaller screens */
+    }
+
+    .inside-textbox-btn {
+        padding: 0.4rem 0.8rem; /* Adjust button size */
+        font-size: 0.8rem;
+    }
+}
+
+
+

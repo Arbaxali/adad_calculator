@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <!-- Input Section -->
+            <div id="input-section" class="headings-container">
+                <h2>Speech to Text Converter</h2>
+                <p>Press the button to start listening</p>
+            </div>
+
+            <div class="interaction-container">
+                <div class="text-box-wrapper">
+                    <textarea id="urduText" class="text-control"></textarea>
+                    <button id="startListening" class="inside-textbox-btn">Start Listening</button>
+                </div>
+                <button id="submitButton" class="btn">Submit</button>
+            </div>
+
+            <!-- Result Section with Back Button -->
+            <div id="result-section" style="display:none;" class="result-container">
+                <h2>Calculation Result</h2>
+                <p id="resultText"></p>
+                <p id="adadValue"></p>
+                <ul id="adadBreakdown"></ul>
+                
+                <!-- Back Button -->
+                <button id="backButton" class="btn">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
