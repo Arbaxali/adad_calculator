@@ -57,7 +57,7 @@ document.getElementById('submitButton').addEventListener('click', async function
     try {
         // Send POST request to FastAPI
         //const response = await fetch('http://127.0.0.1:8000/calculate_adad', {
-        const response = await fetch('https://adad-api.onrender.com/calculate_adad', {
+        const response = await fetch('http://35.208.10.119:8000/calculate_adad', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
