@@ -98,6 +98,7 @@ document.getElementById('backButton').addEventListener('click', function () {
     document.getElementById('result-section').style.display = 'none';
     document.getElementById('input-section').style.display = 'block';
     document.querySelector('.interaction-container').style.display = 'block';
+    textOutput.value = '';
 
     // Scroll back to the top of the page
     window.scrollTo({ top: 0, behavior: 'smooth' });
